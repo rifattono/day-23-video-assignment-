@@ -1,0 +1,361 @@
+
+.header{
+    background: #9980FA;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.menu{
+   padding: 15px 0px 25px 0px;
+}
+.m-logo{
+    
+    display: inline-block;
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    top: 9px;
+}
+.m-logo h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    display: inline-block;
+    left: 400px;
+    top: -10;
+
+}
+nav a{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #ffff;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav .animation{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	background: #4ff02f;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+   
+}
+nav a:nth-child(1){
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover .animation{
+	width: 100px;
+	left: 0;
+}
+nav a:nth-child(2){
+	width: 110px;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 100px;
+}
+nav a:nth-child(3){
+	width: 100px;
+}
+nav a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 210px;
+}
+nav a:nth-child(4){
+	width: 160px;
+}
+nav a:nth-child(4):hover~.animation{
+	width: 160px;
+	left: 310px;
+}
+nav a:nth-child(5){
+	width: 120px;
+}
+nav a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 470px;
+}
+.banner{
+    background-image: url(./Image/background-01.jpg);
+    padding: 300px 0px 50px 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+    z-index: -1;
+  
+    
+
+}
+
+.banner-content{
+    color: #fff;
+    transform:scaleX(0);
+    transition: .5s ease-in-out;
+    transform-origin: left;
+    overflow: hidden;
+    width: 50%;
+    display: inline-block;
+    margin-top: -80px;
+}
+.banner-content h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.banner-content a{
+    text-decoration: none;
+    font-size: 20px;
+
+    padding: 12px 33px;
+    color: #ffff;
+    border: 2px solid rgb(255, 7, 7);
+    display: inline-block;
+    margin-top: 20px;
+    transition: .5s;
+}
+.banner-content a:hover{
+    background: rgb(255, 7, 7);
+    
+}
+
+.banner:hover .banner-content{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.banner-img{
+  width: 40%;
+  display: inline-block;
+  text-align: right;
+  margin-top: -245px;
+  margin-left: 100px;
+}
+.banner-img img{
+    max-width: 100%;
+}
+.banner-img{
+    color: #fff;
+    transform:scaleX(0);
+    transition: .5s ease-in-out;
+    transform-origin: right;
+    overflow: hidden;
+    width: 50%;
+    display: inline-block;
+    transition-delay: .25s;
+}
+.banner:hover .banner-img{
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  .massage{
+    background: #28abe3;
+    color: #fff;
+    position: relative;
+    padding: 100px 0px;
+   
+}
+.massage i{
+    font-size: 60px;
+}
+.m-img img{
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    z-index: 999;
+    background: #28abe3;
+    padding: 10px;
+    z-index: 1;
+}
+.m-content{
+    position: absolute;
+    bottom: -160px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+/* .card-t{
+    margin-top: 0px;
+} */
+.card{
+    width: 30%;
+    display: inline-block;
+    margin-right: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0px 0px 5px #1a5a0d;
+    padding: 20px 0px;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+    transform: scale(.9);
+    
+
+}
+.card:hover{
+    color: #fff;
+    transform: scale(1);
+}
+.card::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  background: #9980FA;
+  z-index: -1;
+  border-radius: 0px 0px 50px 50px;
+  transition: .5s;
+}
+.card:hover::after{
+   height: 100%;
+   border-radius: 0px;
+}
+.card i{
+    font-size: 30px;
+    margin: 20px 0px;
+    height: 50px;
+    width: 50px;
+    background: #ddd;
+    line-height: 50px;
+    border-radius: 50%;
+    color: red;
+    display: inline-block;
+}
+.card h2{
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    text-decoration: none;
+    font-size: 20px;
+
+    padding: 10px 25px;
+    color: #000;
+    border: 2px solid rgb(255, 7, 7);
+    display: inline-block;
+    margin-top: 10px;
+    transition: .5s;
+}
+.card a:hover{
+    background: rgb(255, 7, 7);
+    
+}
+.f-bg{
+    background: #222222;
+    color: #fff;
+    
+}
+.footer{
+    width: 1300px;
+    margin-left: 40px;
+    margin-top: -15px;
+}
+.footer-card{
+    width: 20%;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+    margin-top: -10px;
+    font-size: 14px;
+    line-height: 1.4em;
+
+}
+.footer-card h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.footer-card li{
+    color: #bdbdbd;
+}
+.footer-cards p{
+    color: #bdbdbd;
+}
+.footer-cards{
+    width: 30%;
+    display: inline-block;
+    margin-top: -15px;
+}
+.footer-card li{
+    padding: 5px 0px;
+    font-size: 14px;
+    transition: .4s;
+}
+.footer-card li:hover{
+    color: #28abe3;
+}
+
+.footer-cards h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.f-top{
+    padding: 70px;
+}
+.f-bottom{
+    background: #1b1b1b;
+    color: #bdbdbd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
